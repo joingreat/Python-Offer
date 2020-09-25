@@ -28,4 +28,18 @@ if __name__ == '__main__':
               [2, 3, 6],
               [3, 6, 7]]
     num = 6
-    print find_integer(matrix, num)
+    print (matrix,num,(find_integer(matrix, num)))
+
+class Solution:
+    # array 二维列表
+    def Find(target, array):
+        result = sum(array,[])
+        if target in result:
+            return True
+        else:
+            return False
+
+if __name__ == '__main__':
+    matrix = [[1,2,8,9],[2,4,9,12],[4,7,10,13],[6,8,11,15]]
+    num = 6
+    print (matrix,num,Solution.Find(num,matrix))
